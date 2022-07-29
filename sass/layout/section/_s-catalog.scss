@@ -1,0 +1,109 @@
+.container.catalog .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt-catalog {
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+    margin-top: -5px;
+}
+
+.container.catalog .item {
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    box-shadow: 0px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+
+.container.catalog .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.container.catalog .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.container.catalog .item:hover,
+.container.catalog .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.txt-catalog-animation {
+    position: absolute;
+    width: 100%;
+    height: 294px;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    margin: 0;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    opacity: 1;
+
+
+    color: #ffffff;
+}
+
+.container.catalog .item:hover .txt-catalog-animation,
+.container.catalog .item:hover .img-catalog-animation::before {
+    transform: translateY(0);
+
+}
+
+.img-catalog-animation {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-catalog-animation::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    background-color: rgba(33, 150, 243, 0.9);
+    ;
+
+}
+.txt-projects {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-col);
+
+
+
+}
+
+.title-projects {
+    margin: 0px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-txt-col);
+}

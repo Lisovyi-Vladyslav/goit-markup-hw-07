@@ -1,0 +1,23 @@
+.nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.current {
+    color: var(--accent-cl);
+    position: relative;
+}
+
+.current::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: #2196F3;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    top: 46px;
+}
