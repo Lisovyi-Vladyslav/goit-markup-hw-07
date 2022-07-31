@@ -2,30 +2,12 @@
     background: #2F303A;
 }
 
-.container-address {
-    margin-right: 70px;
-}
-
-.footer-container {
+.footer__container {
     display: flex;
     align-items: center;
 
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer .list {
-    padding: 0px;
-}
-
-.address .item:first-child {
-    margin-bottom: 9px;
-}
-
-.title-social-networks {
-    margin: 0px;
-    margin-bottom: 20px;
-
 }
 
 .title-footer {
@@ -37,50 +19,68 @@
     color: #FFFFFF;
 }
 
-.list.social-networks {
-    display: flex;
+.container-address {
+    margin-right: 70px;
 }
 
-.icon-social-networks {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
+.address__txt {
+    margin: 0px;
+    margin-bottom: 9px;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
-.item-social-networks {
-    margin-right: 10px;
+.address__item:first-child {
+    margin-bottom: 9px;
 }
 
-.link-social-networks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.address__link {
 
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-social-networks:hover,
-.link-social-networks:focus {
-    background-color: var(--accent-cl);
+
+
+.address__link:hover,
+.address__link:focus {
+    color: var(--accent-cl);
 }
 
-.item-social-networks:last-child {
-    margin-right: 0px;
+.container-social-networks__title {
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
-.icon-subscription {
+
+.subscribe__title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.subscribe-form__icon {
     margin-left: 10px;
 
     height: 24px;
     width: 24px;
 }
 
-.btn-hero.subscribe-button-form {
+.subscribe-button-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@
     justify-content: center;
 }
 
-.form-email-subscribe {
+.subscribe-form__input {
     padding: 15px 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -125,7 +125,4 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.title-subscribe-form {
-    margin: 0;
-    margin-bottom: 20px;
-}
+

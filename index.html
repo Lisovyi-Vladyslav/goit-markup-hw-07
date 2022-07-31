@@ -19,7 +19,7 @@
   <body>
     <header class="header container">
       <a class="link link__logo" href=""
-        ><span class="logo__blue">Web</span>Studio</a
+        ><span class="link__logo--blue">Web</span>Studio</a
       >
       <nav class="nav">
         <ul class="nav__list list">
@@ -383,50 +383,72 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer__container">
         <div class="container-address">
           <a class="link link__logo link__logo--while" href=""
-            ><span class="logo__blue">Web</span>Studio</a
+            ><span class="link__logo--blue">Web</span>Studio</a
           >
           <address class="address">
-            <p class="txt-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li class="item">
-                <a class="link footer" href="">info@example.com</a>
+            <p class="address__txt">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="list address__list">
+              <li class="item address__item">
+                <a class="address__link" href="">info@example.com</a>
               </li>
-              <li class="item">
-                <a class="link footer" href="">+38 099 111 11 11</a>
+              <li class="item address__item">
+                <a class="address__link" href="">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div>
-          <h2 class="title-social-networks title-footer">присоединяйтесь</h2>
-          <ul class="list social-networks">
-            <li class="item-social-networks">
-              <a href="" class="link-social-networks">
-                <svg class="icon-social-networks">
+        <div class="container-social-networks">
+          <h2 class="container-social-networks__title title-footer">
+            присоединяйтесь
+          </h2>
+          <ul class="list list-social-networks footer-list-social-networks">
+            <li class="list-social-networks__item">
+              <a
+                href=""
+                class="list-social-networks__link list-social-networks__link--gray"
+              >
+                <svg
+                  class="list-social-networks__icon list-social-networks__icon--white"
+                >
                   <use href="./imeges/icon/icon.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social-networks">
-              <a href="" class="link-social-networks">
-                <svg class="icon-social-networks">
+            <li class="list-social-networks__item">
+              <a
+                href=""
+                class="list-social-networks__link list-social-networks__link--gray"
+              >
+                <svg
+                  class="list-social-networks__icon list-social-networks__icon--white"
+                >
                   <use href="./imeges/icon/icon.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social-networks">
-              <a href="" class="link-social-networks">
-                <svg class="icon-social-networks">
+            <li class="list-social-networks__item">
+              <a
+                href=""
+                class="list-social-networks__link list-social-networks__link--gray"
+              >
+                <svg
+                  class="list-social-networks__icon list-social-networks__icon--white"
+                >
                   <use href="./imeges/icon/icon.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social-networks">
-              <a href="" class="link-social-networks">
-                <svg class="icon-social-networks">
+            <li class="list-social-networks__item">
+              <a
+                href=""
+                class="list-social-networks__link list-social-networks__link--gray"
+              >
+                <svg
+                  class="list-social-networks__icon list-social-networks__icon--white"
+                >
                   <use href="./imeges/icon/icon.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -434,19 +456,17 @@
           </ul>
         </div>
         <fieldset class="subscribe">
-          <p class="title-subscribe-form title-footer">
-            Подпишитесь на рассылку
-          </p>
+          <p class="subscribe__title title-footer">Подпишитесь на рассылку</p>
           <form name="subscribe-form" autocomplete="on" class="subscribe-form">
             <input
               type="email"
-              name="subscribe-email-form"
-              class="form-email-subscribe"
+              name="form-email-subscribe"
+              class="subscribe-form__input"
               placeholder="E-mail"
             />
             <button type="submit" class="btn-main subscribe-button-form">
               <span>Подписаться</span>
-              <svg class="icon-subscription">
+              <svg class="subscribe-form__icon">
                 <use href="./imeges/icon/icon.svg#icon-subscription"></use>
               </svg>
             </button>
@@ -457,13 +477,13 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
-        <form name="signup_form" autocomplete="on">
-          <label class="label-modal">
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form name="modal-form" autocomplete="on">
+          <label class="modal-form__label">
             Имя
-            <div class="conteiner-modal-form">
-              <input type="text" name="username" class="input-form-modal" />
-              <svg class="icon-modal-form">
+            <div class="modal-form__conteiner">
+              <input type="text" name="username" class="modal-form__input" />
+              <svg class="modal-form__icon">
                 <use
                   href="./imeges/icon/icon.svg#icon-person-black-modal"
                 ></use>
@@ -471,52 +491,52 @@
             </div>
           </label>
 
-          <label class="label-modal">
+          <label class="modal-form__label">
             Телефон
-            <div class="conteiner-modal-form">
-              <input type="tel" name="tel" class="input-form-modal" />
-              <svg class="icon-modal-form">
+            <div class="modal-form__conteiner">
+              <input type="tel" name="tel" class="modal-form__input" />
+              <svg class="modal-form__icon">
                 <use href="./imeges/icon/icon.svg#icon-email-black-modal"></use>
               </svg>
             </div>
           </label>
 
-          <label class="label-modal">
+          <label class="modal-form__label">
             Почта
-            <div class="conteiner-modal-form">
-              <input type="email" name="email" class="input-form-modal" />
-              <svg class="icon-modal-form">
+            <div class="modal-form__conteiner">
+              <input type="email" name="email" class="modal-form__input" />
+              <svg class="modal-form__icon">
                 <use href="./imeges/icon/icon.svg#icon-phone-black-modal"></use>
               </svg>
             </div>
           </label>
 
-          <label class="label-modal">
+          <label class="modal-form__coment">
             Комментарий
             <textarea
               name="feedback"
               rows="5"
               placeholder="Введите текст"
-              class="coment-modal-form"
+              class="form__coment"
             ></textarea>
           </label>
 
-          <label class="label-form-checkbox">
+          <label class="form-checkbox">
             <input
               type="checkbox"
               name="checkbox"
-              class="checkbox-input visually-hidden"
+              class="form-checkbox__input visually-hidden"
             />
-            <span class="icon-form-checkbox"> </span>
+            <span class="form-checkbox__icon"> </span>
 
             Соглашаюсь с рассылкой и принимаю
-            <a href="" class="link-form-modal"> Условия договора</a>
+            <a href="" class="form-checkbox__link"> Условия договора</a>
           </label>
 
           <button type="submit" class="submit-btn btn-main">Submit</button>
         </form>
-        <button class="btn-close-modal" data-modal-close>
-          <svg class="icon-modal">
+        <button class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon">
             <use href="./imeges/icon/icon.svg#icon-vector"></use>
           </svg>
         </button>
