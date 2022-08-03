@@ -1,9 +1,19 @@
+// каталог
+.section-catalog {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ECECEC;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+//  список 
+
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-
+// елемент
 .catalog-list__item {
 
     margin-right: 30px;
@@ -11,23 +21,25 @@
 
     box-shadow: 0px;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+    
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 0px;
+        }
+    
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
 
-.catalog-list__item:nth-child(3n) {
-    margin-right: 0px;
-}
 
-.catalog-list__item:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-}
-
-.catalog-list__item:hover,
-.catalog-list__item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
+// текст
 .animation-txt {
     position: absolute;
     width: 100%;
@@ -49,37 +61,46 @@
 
 
     color: #ffffff;
+
+    .catalog-list__item:hover &
+    {
+            transform: translateY(0);
+    
+        }
 }
 
-.catalog-list__item:hover .animation-txt,
-.catalog-list__item:hover .catalog-list__img::before {
-    transform: translateY(0);
 
-}
-
+// зображення
 .catalog-list__img {
     overflow: hidden;
     position: relative;
+
+    &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+    
+            transform: translateY(100%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+            background-color: rgba(33, 150, 243, 0.9);
+            ;
+    
+        }
+
+    .catalog-list__item:hover &::before {
+            transform: translateY(0);
+    
+        }
 }
 
-.catalog-list__img::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
 
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    background-color: rgba(33, 150, 243, 0.9);
-    ;
-
-}
-
+// контейнер для тексту
 .conteiner-projects {
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -87,7 +108,7 @@
     padding: 20px 24px;
     margin-top: -5px;
 }
-
+// контейнер для тексту текст
 .conteiner-projects__txt {
     margin: 0px;
     font-weight: 400;
@@ -95,11 +116,8 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-col);
-
-
-
 }
-
+// контейнер для тексту заголовок
 .conteiner-projects__title {
     margin: 0px;
     margin-bottom: 4px;

@@ -1,11 +1,6 @@
-.section-catalog {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #ECECEC;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+// фільтр
 
+// фільтр список
 .filter-list {
     padding: 0px;
     margin-bottom: 50px;
@@ -14,6 +9,7 @@
 
 }
 
+// фільтр кнопка
 .filter-list__btn {
     padding: 0px 20px;
     min-height: 40px;
@@ -22,19 +18,21 @@
 
 }
 
+// фільтр елемент
 .filter-list__item {
     margin-right: 8px;
     border-radius: 4px;
     box-shadow: 0px;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:last-child {
+            margin-right: 0px;
+        }
+    
+        &:hover,
+        &:focus {
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
 }
 
-.filter-list__item:last-child {
-    margin-right: 0px;
-}
-
-.filter-list__item:hover,
-.filter-list__item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}

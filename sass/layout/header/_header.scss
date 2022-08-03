@@ -1,3 +1,4 @@
+// хедер
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -11,46 +12,41 @@
 }
 
 
+// список-інформація
 
-.list-nav .item:last-child {
-    margin-right: 0px;
-}
-
-.list-info__icon--envelope {
-    margin-right: 10px;
-
-    width: 16px;
-    height: 12px;
-
-}
-
-.list-info__icon--smartphone {
-    margin-right: 10px;
-
-    width: 10px;
-    height: 16px;
-
-}
-
-.list-info__icon {
-    fill: #757575;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-info__link:hover .list-info__icon,
-.list-info__link:focus .list-info__icon {
-    fill: var(--accent-cl);
-}
-
-
+// основні стилі
 .list-info {
     padding: 0px;
     display: flex;
     margin-left: auto;
 }
 
+// іконка
+.list-info__icon {
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &--envelope {
+            margin-right: 10px;
+    
+            width: 16px;
+            height: 12px;
+        }
+    
+        &--smartphone {
+            margin-right: 10px;
+    
+            width: 10px;
+            height: 16px;
+        }
 
+        .list-info__link:hover &,
+        .list-info__link:focus & {
+            fill: var(--accent-cl);
+        }
+}
+
+// силка 
 .list-info__link {
     color: var(--secondary-txt-col);
     font-weight: 500;
@@ -61,24 +57,9 @@
 
 }
 
-
+// елемент
 .list-info__item:last-child {
     margin-left: 50px;
 }
 
-.nav__list {
-    display: flex;
 
-    padding: 0px;
-}
-
-.nav__item {
-
-    margin-right: 50px;
-
-
-}
-
-.nav__item:last-child {
-    margin-right: 0px;
-}

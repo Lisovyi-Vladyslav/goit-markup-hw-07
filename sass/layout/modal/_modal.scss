@@ -1,3 +1,4 @@
+// бегдроп
 .backdrop {
     position: fixed;
     top: 0;
@@ -5,13 +6,9 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
-
-
     /* transform: scale(1.2); */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*transform 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
-
-
 }
 
 .backdrop.is-hidden .modal {
@@ -27,6 +24,7 @@
 
 }
 
+// модальне вікно
 .modal {
     min-width: 528px;
     min-height: 581px;
@@ -42,7 +40,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
+// кнопка
 .modal__btn-close {
     padding: 6px;
     position: absolute;
@@ -60,24 +58,19 @@
 
     cursor: pointer;
 
-
+&:hover,
+&:focus {
+        fill: var(--accent-cl);
+    }
 }
-
-
-
-
-.modal__btn-close:hover,
-.modal__btn-close:focus {
-    fill: var(--accent-cl);
-}
-
+// іконка
 .modal__icon {
     width: 11px;
     height: 11px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+// заголовок
 .modal__title {
     margin: 0;
     margin-bottom: 12px;

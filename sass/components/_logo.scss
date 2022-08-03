@@ -1,6 +1,4 @@
-.link__logo--blue {
-    color: var(--accent-cl);
-}
+
 
 .link__logo {
     margin-right: 90px;
@@ -11,9 +9,14 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
 
-.link__logo--while {
+    &--blue {
+            color: var(--accent-cl);
+        }
+
+&--while {
     color: #FFFFFF;
     margin: 0px;
 }
+    }
+
